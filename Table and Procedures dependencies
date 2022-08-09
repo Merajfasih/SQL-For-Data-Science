@@ -1,0 +1,14 @@
+Task 1: How to Find the Table Dependencies in Sql Server.
+
+--Query 1
+select * from sys.dm_sql_referencing_entities
+('dbo.Employees','Object')
+
+
+Task 2: How to Find the Procedure Dependencies in Sql Server.
+
+--Query 2
+
+select * from sys.dm_sql_referenced_entities
+('dbo.sp_GetEmployees','Object')
+
